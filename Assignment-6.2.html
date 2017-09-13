@@ -1,0 +1,60 @@
+<html><!-- Head of the Root -->
+  <head><!-- child sub root of the html tag as head tag  -->
+    <!-- it is a title tag -->
+    <title>Assignment6.2</title>
+  </head>
+
+    <!-- it is a body tag -->
+    <body>
+      <script language="JavaScript">
+        
+        /* Creating array */
+        var arr = [3,4,5,6,7,8,9];
+
+        /* Push elements */
+        arr.push(15,14,21,63);
+        document.write("The elements of an array after push:<br>");
+          for(i=0;i<arr.length;i++)
+          document.write(arr[i]+"<br>");
+
+        document.write("<br><br>");
+
+        /* Pop the elements */
+        arr.pop();
+        arr.pop();
+        arr.pop();
+        arr.pop();
+        document.write("The elements of an array after pop:<br>");
+          for(i=0;i<arr.length;i++)
+          document.write(arr[i]+"<br>");
+
+        document.write("<br><br>");
+      
+        document.write("First four elements of an array:<br>");
+      
+        /* Extracting array elements */
+          for(i=0;i<4;i++)
+          document.write(arr[i]+"<br>");
+        
+        document.write("<br><br>");
+        
+        document.write("elements of an array using forEach loop:<br>");
+        
+        </script>
+
+        <button onclick="numbers.forEach(fun)">Try it</button>
+        <p id="demo"></p>
+
+        <script>
+          demoP = document.getElementById("demo");
+          var numbers = [3, 4, 5, 6, 7, 8, 9];
+          /* Iterating elements using forEach loop */
+          function fun(item, index) 
+          {
+          demoP.innerHTML = demoP.innerHTML + "index[" + index + "]: " + item + "<br>"; 
+          }
+      
+      </script>
+
+  </body>
+</html>
